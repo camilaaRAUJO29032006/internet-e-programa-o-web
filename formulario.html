@@ -3,35 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formulário de Registro</title>
+<title>Formulário</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #e8a4ee; /* Rosa claro */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    form {
+        background-color: rgb(197, 103, 169);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid rgb(232, 70, 232);
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #d676bf;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
 </head>
 <body>
-
-<h2>Formulário de Registro</h2>
-
-<form action="/submit_form.php" method="post">
-  <div>
+<form action="#" method="post">
     <label for="nome">Nome:</label>
     <input type="text" id="nome" name="nome" required>
-  </div>
-  <div>
     <label for="sobrenome">Sobrenome:</label>
     <input type="text" id="sobrenome" name="sobrenome" required>
-  </div>
-  <div>
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
-  </div>
-  <div>
     <label for="senha">Senha:</label>
     <input type="password" id="senha" name="senha" required>
-  </div>
-  <div>
     <label for="senha_repetida">Repita a Senha:</label>
     <input type="password" id="senha_repetida" name="senha_repetida" required>
-  </div>
-  <button type="submit">Enviar</button>
+    <input type="submit" value="Enviar">
 </form>
-
 </body>
 </html>
